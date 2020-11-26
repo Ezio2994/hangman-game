@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Caveat', cursive;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("./imgs/paperBG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .instructions {
+  width: 70%;
+  text-align: center;
+  font-size: 28px;
+}
+
+main .instructions button {
+  padding: 5px;
+  border-radius: 15px;
+}
+
+main button {
+  background-color: #ACB4B7;
+  border: #8D8583 3px double;
+  font-weight: bolder;
+  font-size: 21px;
+}
+
+main button:hover {
+  background-color: #61646B;
+  border: #74828B 3px double;
+  color: white;
+}
+
+main button:focus {
+  outline: none;
+}
+
+main .top {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .top article {
+  width: 50%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  justify-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+main .top article p {
+  visibility: hidden;
+  font-size: 38px;
+}
+
+main .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  min-height: 100px;
+}
+
+main .center h2 {
+  font-size: 32px;
+}
+
+main .center input {
+  height: 60px;
+  width: 200px;
+  font-size: 24px;
+  border-radius: 10px;
+  background-color: #ACB4B7;
+  border: #8D8583 3px double;
+  font-weight: bolder;
+}
+
+main .center input:focus {
+  outline: none;
+}
+
+main .center button {
+  padding: 15px;
+}
+
+main .bottom {
+  margin-top: 20px;
+  width: 100%;
+  max-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .bottom button {
+  width: 40px;
+  height: 40px;
+  border-radius: 30%;
+}
+
+main .gameOver {
+  display: none;
+  z-index: 1;
+  background: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+main .gameOver div {
+  background-image: url("./imgs/paperBG.jpg");
+  height: 300px;
+  width: 600px;
+  border: 5px double black;
+  background-color: lightgray;
+  margin: 15% auto;
+  text-align: center;
+  font-size: 24px;
+  padding: 30px;
+}
+
+main .gameOver div button {
+  margin-top: 30px;
+  padding: 15px;
+  border-radius: 20px;
+}
+/*# sourceMappingURL=style.css.map */
