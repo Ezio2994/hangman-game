@@ -46,7 +46,6 @@ const chooseWords = () => {
     }
     currentWord = words[random]
     checkWords()    
-    console.log(currentWord);
 }
 
 const checkWords = () => {
@@ -67,7 +66,6 @@ const generateWord = () => {
         } else if (currentWord[index] === ' ') {
             letters[index].innerHTML = "_"
             rightWord++
-            console.log(rightWord);
         }
     }
 }
@@ -81,7 +79,6 @@ lettersButtons.forEach(button => {
                     lettersCounter++
                     rightWord++
                     totalLetters ++
-                    console.log(rightWord);
                 }
             } checkMissingLetters()
             button.style.visibility = 'hidden'

@@ -84,6 +84,11 @@ main .top article p {
   font-size: 38px;
 }
 
+main .top #imageContainer {
+  min-width: 400px;
+  min-height: 400px;
+}
+
 main .center {
   display: -webkit-box;
   display: -ms-flexbox;
