@@ -104,6 +104,7 @@ const guessedWord = () => {
         totalScore += 5;
         scoreDisplay.forEach(score => score.innerHTML = totalScore)
         checkAnswerButton.innerHTML = 'Next Word!'
+        enterWord.style.visibility = 'hidden'
     }
 }
 
@@ -119,14 +120,12 @@ checkAnswerButton.addEventListener('click', () => {
             } else {
                 totalScore += 5;
             }
-            console.log(currentWord.length / 2);
-            console.log(totalLetters);
 
             checkAnswerButton.innerHTML = 'Next Word!'
             enterWord.style.visibility = 'hidden'
 
         } else if (checkAnswerButton.innerHTML === 'Next Word!') {
-            letters.forEach(letter => letter.style.visibility = 'hidden')
+            letters.forEach(letter => letter.style.display = 'none')
             enterWord.value = ''
             chooseWords()
             checkAnswerButton.innerHTML = 'Check answer!'
@@ -145,7 +144,7 @@ playAgain.addEventListener('click', () => {
     gameOverSection.style.display = 'none'
     scoreDisplay.forEach(score => score.innerHTML = totalScore)
     lettersButtons.forEach(button => button.style.visibility = 'visible')
-    letters.forEach(letter => letter.style.visibility = 'hidden')
+    letters.forEach(letter => letter.style.display = 'inline-block')
     hanged.innerHTML = `<img src="./imgs/hanged0.png" alt="">`
     chooseWords()
 })
