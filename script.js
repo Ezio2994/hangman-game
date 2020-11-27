@@ -42,7 +42,7 @@ const chooseWords = () => {
     } else if (random <= 19) {
         topic.innerHTML = 'Food'
     } else if (random <= 24) {
-        topic.innerHTML = 'SPORT'
+        topic.innerHTML = 'Sport'
     }
     currentWord = words[random]
     checkWords()    
@@ -62,9 +62,10 @@ const generateWord = () => {
     for (let index = 0; index < currentWord.length; index++) {
         if (currentWord[index] !== ' ') {
             letters[index].innerHTML = "_"
-            letters[index].style.visibility = 'visible'
+            letters[index].style.display = 'inline-block'
         } else if (currentWord[index] === ' ') {
-            letters[index].innerHTML = "_"
+            letters[index].style.display = 'inline-block'
+            letters[index].innerHTML = "-"
             rightWord++
         }
     }
