@@ -19,10 +19,7 @@ let rightWord = 0;
 let totalLetters = 0;
 let totalScore = 0;
 
-closeInstructions.addEventListener('click', () => {
-    instructions.style.display = 'none'
-})
-
+closeInstructions.addEventListener('click', () => instructions.style.display = 'none')
 
 const chooseWords = () => {
     hanged.innerHTML = `<img src="./imgs/hanged0.png" alt="">`
@@ -144,7 +141,7 @@ playAgain.addEventListener('click', () => {
     gameOverSection.style.display = 'none'
     scoreDisplay.forEach(score => score.innerHTML = totalScore)
     lettersButtons.forEach(button => button.style.visibility = 'visible')
-    letters.forEach(letter => letter.style.display = 'inline-block')
+    letters.forEach(letter => letter.style.display = 'none')
     hanged.innerHTML = `<img src="./imgs/hanged0.png" alt="">`
     chooseWords()
 })
